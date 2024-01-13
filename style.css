@@ -1,6 +1,7 @@
 *{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
 /* SHared style */
 .btn-primary{
@@ -62,7 +63,7 @@ nav li a{
 }
 
 .text-grey{
-    font-size: 1rem;
+    /* font-size: 1rem; */
     color: #727272;
 }
 
@@ -123,6 +124,13 @@ main{
     nav {
         flex-direction: column;
     }
+
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-image-container{
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Tablet or medium devices */
@@ -131,7 +139,7 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }
 }
