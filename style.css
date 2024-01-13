@@ -117,6 +117,54 @@ main{
     font-weight: 700;
 }
 
+/* Features section Style*/
+.features-section{
+    display: flex;
+    margin: 130px 0px;
+    gap: 100px;
+}
+
+.features-section .section-title{
+    border-left: 5px solid #ff900e;
+    padding-left: 20px;
+}
+
+.feature-content .card{
+    width: 586px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.96);
+}
+
+
+.feature-img img{
+    height: 90%;
+    margin-left: 90px;
+}
+.ten-years-batch{
+    border-radius: 8px;
+    background: #ff900e;
+    color: white;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.ten-years-batch h2{
+    margin: 0px;
+    
+    font-size: 4rem;
+
+}
+.ten-years-batch p{
+    font-size: 1.5rem;
+    
+}
 /* Fact section */
 
 .facts-card-container{
@@ -173,8 +221,17 @@ main{
         flex-direction: column;
     }
 
-    .teams-container, .facts-card-container, .sopnsors-image-container{
+    .teams-container, .facts-card-container, .sopnsors-image-container, .features-section{
         flex-direction: column;
+    }
+
+    .feature-img img{
+        width: 90%;
+        margin-left: 0px;
+    }
+    .ten-years-batch{
+        position: static;
+        max-width: 300px;
     }
     .teams-image-container{
         grid-template-columns: 1fr;
@@ -191,7 +248,7 @@ main{
     header{
         padding: 20px;
     }
-    nav, .teams-container, .sopnsors-image-container{
+    nav, .teams-container, .sopnsors-image-container, .features-section{
         flex-direction: column;
     }
 }
